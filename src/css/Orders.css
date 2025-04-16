@@ -1,0 +1,129 @@
+.card-body p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.order-main {
+    padding-top: 56px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-header:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 0px auto;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.order-main {
+    min-height: calc(100vh - 250px);
+}
+
+.order-card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-card .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px;
+}
+
+.order-card .card-body {
+    padding: 20px;
+}
+
+.order-name {
+    margin-bottom: 10px;
+}
+
+.btn-collapse {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.btn-collapse i {
+    font-size: 1.2rem;
+}
+
+/* Progress bar styles */
+.progress {
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #28a745;
+}
+
+/* Status badge styles */
+.badge {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.card-body h3 {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-body p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Delivery estimate styles */
+.delivery-estimate {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Order items styles */
+.order-items {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .order-card .card-header {
+        padding: 10px;
+    }
+    
+    .order-card .card-body {
+        padding: 15px;
+    }
+    
+    .badge {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+}

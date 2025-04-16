@@ -1,0 +1,352 @@
+.main-homepage {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-section {
+    position: relative;
+    z-index: 2;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease-out;
+    color: #2c3e50;
+}
+
+.hero-content h4 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.3s;
+    color: #6c757d;
+}
+
+.hero-content h6 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.6s;
+    color: #6c757d;
+}
+
+.hero-content h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.9s;
+    color: #2c3e50;
+}
+
+.hero-content .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out 1.2s;
+    margin-right: 1rem;
+    border: 2px solid #2c3e50;
+}
+
+.hero-content .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features-section {
+    padding: 5rem 0;
+    background: #ffffff;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin: 1rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9ecef;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.testimonials-section {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9ecef;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #2c3e50;
+}
+
+.stats-section {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.homepage-footer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 2rem;
+    background: #2c3e50;
+}
+
+.homepage-footer .footer-item > a {
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+.homepage-footer .footer-item > a:hover {
+    color: #e9ecef;
+    transform: translateY(-3px);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #2c3e50;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #2c3e50;
+}
+
+.feature-card h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.testimonial-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-card p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.testimonial-card .text-muted {
+    color: #6c757d !important;
+}
+
+/* Stats Section Styles */
+.stats-section {
+    background-color: #f8f9fa;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Feature Section Styles */
+.feature-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #343a40;
+}
+
+.feature-card p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #007bff;
+}
+
+.testimonial-card h4 {
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-card .text-muted {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-rating {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.testimonial-rating .text-warning {
+    margin: 0 0.2rem;
+}
